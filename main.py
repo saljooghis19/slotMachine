@@ -24,7 +24,7 @@ def get_slot_machine_spin(rows, cols, symbols):
 
     columns = [[], [], []]
 
-
+# Collects user balance
 def deposit():
     while True:
         amount = input("What would you like to deposit? $")
@@ -39,6 +39,7 @@ def deposit():
 
     return amount
 
+# This is the risk of slot they are willing to take between 1-3
 def get_amount_of_lines():
     while True:
         lines = input("Enter the number of lines to bet on (1-" + str(MAX_LINES) + ")? ")
@@ -53,6 +54,7 @@ def get_amount_of_lines():
 
     return lines
 
+# User selects the amount of money they are willing to bet, and the amount of lines in the slot machine
 def get_bet():
     while True:
         amount = input("What would you like to bet on each line? $")
